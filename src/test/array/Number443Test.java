@@ -7,18 +7,18 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class Number334Test {
+class Number443Test {
 
     @ParameterizedTest
     @MethodSource("testCases")
-    void testSolution(int[] array, boolean result) {
-        Assertions.assertEquals(new Number_334().increasingTriplet(array), result);
+    void testSolutionc(char[] array, int result) {
+        Assertions.assertEquals(new Number_443().compress(array), result);
     }
 
     public static Stream<Arguments> testCases() {
         return Stream.of(
-                Arguments.of(new int[]{2,1,5,0,3}, false),
-                Arguments.of(new int[]{2,1,5,0,4,6}, true)
+//                Arguments.of(new char[]{'a','a','b','b','c','c','c'}, 6),
+                Arguments.of(new char[]{'a','b','b','b','b','b','b','b','b','b','b','b','b'}, 4)
         );
     }
 }

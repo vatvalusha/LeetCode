@@ -7,18 +7,19 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class Number334Test {
+class Number2974Test {
 
     @ParameterizedTest
     @MethodSource("testCases")
-    void testSolution(int[] array, boolean result) {
-        Assertions.assertEquals(new Number_334().increasingTriplet(array), result);
+    void testSolution(int[] array, int[] result) {
+        Assertions.assertArrayEquals(new Number_2974().numberGame(array), result);
     }
 
     public static Stream<Arguments> testCases() {
         return Stream.of(
-                Arguments.of(new int[]{2,1,5,0,3}, false),
-                Arguments.of(new int[]{2,1,5,0,4,6}, true)
+                Arguments.of(new int[]{5, 4, 2, 3}, new int[]{3, 2, 5, 4}),
+                Arguments.of(new int[]{2, 5}, new int[]{5, 2})
         );
     }
+
 }

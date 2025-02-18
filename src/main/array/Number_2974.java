@@ -21,7 +21,7 @@ public class Number_2974 {
 
     public int[] numberGame(int[] nums) {
         int[] result = new int[nums.length];
-        this.countingSort(nums);
+        this.countingSort(nums, 100);
 
         for (int i = 0; i < nums.length - 1; i += 2) {
             result[i + 1] = nums[i];
@@ -31,11 +31,10 @@ public class Number_2974 {
         return result;
     }
 
-    public void countingSort(int[] arr) {
+    public void countingSort(int[] arr, int max) {
         if (arr.length == 0) return;
 
 //        int max = Arrays.stream(arr).max().getAsInt();
-        int max = 100;
 
         int[] count = new int[max + 1];
 

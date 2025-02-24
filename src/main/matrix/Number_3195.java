@@ -1,4 +1,4 @@
-package array;
+package matrix;
 
 public class Number_3195 {
 

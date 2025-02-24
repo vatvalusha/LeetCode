@@ -19,8 +19,8 @@ class RemoveDuplicatesFromSortedArray80Test {
 
     public static Stream<Arguments> testCases() {
         return Stream.of(
-//                Arguments.of(new int[]{1,1,1,2,2,3}, 5),
-                Arguments.of(new int[]{0,0,1,1,1,1,2,3,3}, 7)
+                Arguments.of(new int[]{1, 1, 1, 2, 2, 3}, 5),
+                Arguments.of(new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3}, 7)
         );
     }
 }

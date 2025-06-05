@@ -28,7 +28,7 @@ class MajorityElement_169 {
                 counter = 1;
             }
         }
-
+        System.out.println("new raw for test");
         return element;
     }
 }
